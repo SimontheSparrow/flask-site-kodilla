@@ -1,0 +1,25 @@
+{% extends "about_me.html" %}
+{% block head %}
+<link href="/static/site.css" rel="stylesheet">
+<title>Contact</title>
+{% endblock %}
+{% block content %}
+        <h2>Kontakt</h2>
+        <div>
+            <ul>
+                <li>
+                    <strong>email:</strong> email@email.pl
+                </li>
+                <li>
+                    <strong>tel: </strong> 123456789
+                </li>
+            </ul>
+        </div>
+    <div>
+        <h3>Wyślij wiadomość</h3>
+        <form method="post">
+            <input name="firstname"/>
+            <input type="submit"/>
+        </form>
+    </div>
+{% endblock %}

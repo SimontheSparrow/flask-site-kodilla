@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    {% block head %}
+    <link href="/static/site.css" rel="stylesheet">
+    <title>About me</title>
+     {% endblock %}
+</head>
+
+<body>
+    <h1><strong>Witaj na mojej stronie</strong></h1>
+    <img src="https://i.pinimg.com/564x/5f/d1/9a/5fd19a789854b87701b9200c45f210bf.jpg" alt="Dumb image"
+        title="Horseman">
+    <div id="content">{% block content %}
+        <h2>O mnie</h2>
+        <div>
+            <strong>Imię:</strong> Szymon <br>
+            <strong>Nazwisko: </strong> Wróbel
+        </div>
+        {% endblock %}
+
+    </div>
+
+
+
+
+</body>
+
+</html>
